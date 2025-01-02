@@ -1,0 +1,329 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9fafb;
+}
+
+.signup-box {
+  background: white;
+  padding: 40px;
+  width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo-placeholder {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #6c63ff;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.logo-dots {
+  position: absolute;
+  top: -10px;
+  right: 40%;
+  display: flex;
+  gap: 3px;
+}
+
+.logo-dots span {
+  width: 8px;
+  height: 8px;
+  background-color: #6c63ff;
+  border-radius: 50%;
+}
+
+.signup-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.signup-form .form-group {
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+}
+
+.signup-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.signup-button:hover {
+  background-color: #5847d6;
+}
+
+.divider {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #666666;
+  position: relative;
+}
+
+.divider:before,
+.divider:after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  top: 50%;
+}
+
+.divider:before {
+  left: 0;
+}
+
+.divider:after {
+  right: 0;
+}
+
+.google-button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.google-logo {
+  width: 20px;
+}
+
+.google-button:hover {
+  background-color: #f3f3f3;
+}
+
+.login-link {
+  font-size: 14px;
+  color: #666666;
+}
+
+.login-link a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+.open-modal-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+  display: block;
+  text-align: center;
+}
+.right-align {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+}
+
+
+.open-modal-button:hover {
+  background-color: #1a741d;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.close-button {
+  background-color: #d9534f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #c9302c;
+}
+.table-container {
+  width: 100%;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.full-screen-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.full-screen-table tbody tr {
+  border-bottom: 1px solid #dee2e6; /* Custom separator line */
+}
+
+.action-button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action-button:hover {
+  background-color: #1a741d;
+}
+
+.action-button.delete {
+  background-color: #d9534f;
+}
+
+.action-button.delete:hover {
+  background-color: #c9302c;
+}
+.right-align {
+  position: absolute;
+  top: 20px; 
+  right: 20px;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background-color: #eeeeee; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+
+.signup-form {
+  width: 100%;
+  max-width: 600px; /* Maximum width for the form */
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for better contrast */
+}
+
+/* Form input fields */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #1a741d;
+}
+.label-form{
+  font-size: 18px;
+  font-weight: 600;
+}
